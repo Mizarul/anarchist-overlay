@@ -28,6 +28,7 @@ const textConfig = {
     {
       text: 'EARLY SPRING, 5014U | HERCYNIA',
       fontSize: '20px'
+      fontFamily: 'monospace'
     },
     {
       text: 'FOREST NEAR EVERGREEN | WEATHER: EXTREME HUMIDITY',
