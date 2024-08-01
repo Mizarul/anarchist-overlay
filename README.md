@@ -3,6 +3,7 @@
 # Anarchist Overlay
 
 Module for the Foundry VTT, allowing to render arbitrary HTML in a configurable overlay above the canvas for all users simultaneously. It also includes a method for getting HTML for mission briefing-like text crawl.
+Additionally, this version can render custom fonts uploaded to your foundry instance by calling the fontfamily inside a line object. By default it is set to 'monospace'
 
 ## Installation
 
@@ -143,7 +144,7 @@ export type TextCrawlConfig = {
   typingTime?: number, // how long (in seconds) does the typing animation take per one line
   delay?: number, // how long (in seconds) does the typing animation pause before next line is typed
   blackBars?: boolean, // should black bars on top and bottom be rendered
-  lines: { text: string, fontSize?: string }[], // list of lines to be rendered
+  lines: { text: string, fontSize?: string, fontFamily?: string }[], // list of lines to be rendered
   glitchEffect?: { time: number } | false; // adds a glitch effect. Should contain object with information how long should animation loop take
 };
 ```
