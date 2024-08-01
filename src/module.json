@@ -4,7 +4,7 @@
   "description": "Fancy overlay stuff",
   "version": "0.2.0",
   "minimumCoreVersion" : "9",
-  "compatibleCoreVersion" : "10",
+  "compatibleCoreVersion" : "11",
   "library": true,
   "styles": ["style.css"],
   "esmodules": ["scripts/module.js"],
