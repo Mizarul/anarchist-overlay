@@ -1,3 +1,5 @@
+# THIS IS FOR TESTING PURPOSES, ALL CREDIT GOES TO THE AUTHOR reynevan24
+
 # Anarchist Overlay
 
 Module for the Foundry VTT, allowing to render arbitrary HTML in a configurable overlay above the canvas for all users simultaneously. It also includes a method for getting HTML for mission briefing-like text crawl.
@@ -6,7 +8,7 @@ Module for the Foundry VTT, allowing to render arbitrary HTML in a configurable 
 
 Install using a manifest link:
 ```
-https://github.com/reynevan24/anarchist-overlay/releases/latest/download/module.json
+https://github.com/Mizarul/anarchist-overlay/releases/latest/download/module.json
 ```
 
 ## Example usage:
@@ -28,6 +30,7 @@ const textConfig = {
   lines: [{
       text: 'MISSION 1: BUG HUNT',
       fontSize: '52px',
+      fontFamily: 'monospace'
     },
     {
       text: 'COMBAT: TRAPDOOR SPIDER',
@@ -82,10 +85,12 @@ const textConfig = {
       {
         text: '>//CC: FORCOMM X-X DESG:: “BROADCAST”',
         fontSize: '30px',
+        fontFamily: 'monospace'
       },
       {
         text: '>//if:::HOSTILE=TRUE then:::',
         fontSize: '30px',
+        fontFamily: 'monospace'
       },
       {
         text: '>//WIPE THEM ALL AWAY',
@@ -117,7 +122,7 @@ textHtml = await anarchistOverlay.createTextCrawlHtml(textConfig);
 
 anarchistOverlay.createOverlay(overlayConfig, textHtml);
 ```
-![Animation-4](https://github.com/reynevan24/anarchist-overlay/assets/10486394/7a0c55be-2a1b-4bb2-b987-df6e6fc78b7d)
+![Animation-4](https://github.com/Mizarul/anarchist-overlay/assets/10486394/7a0c55be-2a1b-4bb2-b987-df6e6fc78b7d)
 
 ## Config
 ```js

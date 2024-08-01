@@ -1,0 +1,44 @@
+
+const overlayConfig = {
+  positionX: 'start',
+  positionY: 'center'
+}
+
+const textConfig = {
+  offsetX: '20px',
+  offsetY: '0',
+  typingTime: 2,
+  delay: 1,
+  blackBars: true,
+  lines: [{
+      text: 'MISSION 1: BUG HUNT',
+      fontSize: '52px',
+      fontFamily: 'MagiRibbon'
+    },
+    {
+      text: 'COMBAT: TRAPDOOR SPIDER',
+      fontSize: '38px',
+      fontFamily: 'MagiRibbon'
+    },
+    {
+      text: 'OBJECTIVE: SEARCH AND DESTROY',
+      fontSize: '34px'
+      fontFamily: 'monospace'
+    },
+    {
+      text: 'EARLY SPRING, 5014U | HERCYNIA',
+      fontSize: '20px'
+    },
+    {
+      text: 'FOREST NEAR EVERGREEN | WEATHER: EXTREME HUMIDITY',
+      fontSize: '20px'
+    },
+  ]
+}
+
+
+const anarchistOverlay = game.modules.get('anarchist-overlay');
+textHtml = await anarchistOverlay.createTextCrawlHtml(textConfig);
+
+
+anarchistOverlay.createOverlay(overlayConfig, textHtml);
