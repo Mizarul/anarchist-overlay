@@ -6,7 +6,7 @@ export type TextCrawlConfig = {
   typingTime?: number;
   delay?: number;
   blackBars?: boolean;
-  lines: { text: string, fontSize?: string }[];
+  lines: { text: string, fontSize?: string, fontFamily?: string }[];
   glitchEffect?: { time: number } | false;
 };
 
@@ -35,7 +35,7 @@ const normalizeConfig = (config: TextCrawlConfig): NormalizedConfig => {
     typingTime: config.typingTime ?? 2,
     delay: config.delay ?? 1,
     blackBars: config.blackBars ?? true,
-    lines: config.lines.map(line => ({text: line.text, fontSize: line.fontSize ?? '32px'})),
+    lines: config.lines.map(line => ({text: line.text, fontSize: line.fontSize ?? '32px', fontFamily: line.fontFamily ?? 'monospace'})),
     glitchEffect: config.glitchEffect ?? false
   };
 }
