@@ -1,8 +1,9 @@
-# THIS IS FOR TESTING PURPOSES, ALL CREDIT GOES TO THE AUTHOR reynevan24
+# THIS IS A FORKED REP FOR FONT IMPLEMENTATION, ALL CREDIT GOES TO THE AUTHOR reynevan24
 
 # Anarchist Overlay
 
 Module for the Foundry VTT, allowing to render arbitrary HTML in a configurable overlay above the canvas for all users simultaneously. It also includes a method for getting HTML for mission briefing-like text crawl.
+
 Additionally, this version can render custom fonts uploaded to your foundry instance by calling the fontfamily inside a line object. By default it is set to 'monospace'
 
 ## Installation
